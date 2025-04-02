@@ -1,0 +1,8 @@
+Matemática;Fulano;10.0
+Matemática;Fulino;2.0
+Matemática;fulo;8.0
+Fulano;10;10.0
+Português;Fulano;10.0
+Matemática;Fulano;10.0
+Português;Fulano;5.0
+Matemática;Fudencio;5.0

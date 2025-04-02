@@ -55,8 +55,6 @@ def criaArquivo(nomeArquivo):
     try:
         file = open(nomeArquivo, 'w+')
         file.close()
-    except FileExistsError:
-        print(f'Erro: O arquivo {nomeArquivo} já existe.')
     except:
         print(f'Erro: Não foi possível criar o arquivo {nomeArquivo}.')
     else:
@@ -114,6 +112,6 @@ def inserirCadastro(nomeArquivo, provaRef, nomeAluno, notaAluno):
         print(f'Erro: Não foi possível abrir o arquivo {nomeArquivo}.')
         return None
     else:
-        file.write(f'{provaRef};{nomeAluno};{notaAluno}\n')
+        file.write(f'{provaRef.capitalize()};{nomeAluno.capitalize()};{notaAluno}\n')
     finally:
         file.close()
